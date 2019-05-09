@@ -3,9 +3,9 @@
   "short_name": "Loader",
   "theme_color": "#b0eae0",
   "background_color": "#b0eae0",
-  "display": "browser",
-  "Scope": "/",
-  "start_url": "/.",
+  "display": "minimal-ui",
+  "Scope": "/LoaderPWA/",
+  "start_url": "/LoaderPWA/.",
   "icons": [
     {
       "src": "images/icons/icon-72x72.png",
