@@ -29,14 +29,14 @@ self.addEventListener('fetch', event => {
   }
 
 async function networkFirst(request) {
-  const dynamicCache = await caches.open('news-dynamic');
+  const cache = await caches.open(cacheName);
   try {
     const networkResponse = await fetch(request);
     dynamicCache.put(request, networkResponse.clone());
     return networkResponse;
   } catch (err) {
-    const cachedResponse = await dynamicCache.match(request);
-    return cachedResponse || await caches.match('./fallback.json');
+    const cachedResponse = await cache.match(request);
+    return cachedResponse;
   }
 }
   
