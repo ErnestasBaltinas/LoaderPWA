@@ -1,9 +1,9 @@
 const cacheName = 'loader-v1';
 
 const staticAssets = [
-  './',
-  './app.js',
-  './styles.css'
+  './LoaderPWA/',
+  './LoaderPWA/app.js',
+  './LoaderPWA/styles.css'
 ];
 
 self.addEventListener('install', async function () {
