@@ -32,7 +32,7 @@ async function networkFirst(request) {
   const cache = await caches.open(cacheName);
   try {
     const networkResponse = await fetch(request);
-    dynamicCache.put(request, networkResponse.clone());
+    cache.put(request, networkResponse.clone());
     return networkResponse;
   } catch (err) {
     const cachedResponse = await cache.match(request);
