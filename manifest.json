@@ -3,7 +3,7 @@
   "short_name": "Loader",
   "theme_color": "#b0eae0",
   "background_color": "#b0eae0",
-  "display": "minimal-ui",
+  "display": "standalone",
   "Scope": "/LoaderPWA/",
   "start_url": "/LoaderPWA/.",
   "icons": [
